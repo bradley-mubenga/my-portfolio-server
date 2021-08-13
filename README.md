@@ -1,2 +1,3 @@
-# my-portfolio-server
-This repository is the source code for my portfolio's server.
+# Strapi application
+
+A quick description of your strapi application
