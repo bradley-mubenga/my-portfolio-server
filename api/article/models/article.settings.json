@@ -20,7 +20,7 @@
       "type": "text",
       "required": true
     },
-    "content": {
+    "paragraphOne": {
       "type": "richtext",
       "required": true
     },
@@ -33,7 +33,7 @@
       "model": "category",
       "via": "articles"
     },
-    "image": {
+    "imageOne": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
@@ -48,6 +48,36 @@
     "author": {
       "via": "articles",
       "model": "writer"
+    },
+    "paragraphTwo": {
+      "type": "richtext"
+    },
+    "paragraphThree": {
+      "type": "richtext"
+    },
+    "imageTwo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "imageThree": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
