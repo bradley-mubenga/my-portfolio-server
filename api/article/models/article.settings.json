@@ -33,18 +33,6 @@
       "model": "category",
       "via": "articles"
     },
-    "imageOne": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "files",
-        "images",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": true,
-      "pluginOptions": {}
-    },
     "author": {
       "via": "articles",
       "model": "writer"
@@ -55,30 +43,6 @@
     "paragraphThree": {
       "type": "richtext"
     },
-    "imageTwo": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
-    "imageThree": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "projectLink": {
       "type": "string",
       "required": true
@@ -87,6 +51,15 @@
       "type": "string",
       "required": true,
       "default": "https://github.com/bradley-mubenga"
+    },
+    "imageOne": {
+      "type": "text"
+    },
+    "imageTwo": {
+      "type": "text"
+    },
+    "imageThree": {
+      "type": "string"
     }
   }
 }
